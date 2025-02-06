@@ -70,3 +70,7 @@ def logout():
     logout_user()
     flash('You have been logged out.', 'success')
     return redirect(url_for('index'))
+
+@app.route("/about")
+def about_me():
+	return "<h1>About Me</h1>"
